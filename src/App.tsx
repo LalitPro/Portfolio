@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
-    <div className="font-sans bg-gray-50 text-gray-800">
+    <div className="w-screen font-sans text-gray-800 bg-gray-50">
       <Hero />
       <About />
       <Projects />

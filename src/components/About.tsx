@@ -2,24 +2,29 @@ import React from "react";
 
 const AboutMe: React.FC = () => {
   return (
-    <section id="about" className="px-6 py-20 mx-auto text-center max-w-7xl">
+    <section
+      id="about"
+      className="px-6 py-20 mx-auto my-5 text-center max-w-7xl"
+    >
       <h2 className="mb-8 text-3xl font-bold">About Me</h2>
       <div className="space-y-6">
-        <p className="text-lg leading-relaxed text-gray-700">
-          Hi, I'm <span className="font-semibold text-blue-500">Lalit</span>, a
-          passionate web developer focused on creating interactive and
-          user-friendly websites. My journey into the world of technology began
-          in 2018, and since then, I've been dedicated to mastering various web
-          development technologies.
-        </p>
-        <p className="text-lg leading-relaxed text-gray-700">
-          I specialize in frontend development and have experience building
-          e-commerce sites, interactive applications, and experimenting with
-          modern web technologies. I’m especially interested in creating clean,
-          efficient, and visually appealing designs that offer a seamless user
-          experience.
-        </p>
-        <div className="mt-8">
+        <div>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Hi, I'm <span className="font-semibold text-blue-500">Lalit</span>,
+            a passionate web developer focused on creating interactive and
+            user-friendly websites. My journey into the world of technology
+            began in 2018, and since then, I've been dedicated to mastering
+            various web development technologies.
+          </p>
+          <p className="mb-2 text-lg leading-relaxed text-gray-700">
+            I specialize in frontend development and have experience building
+            e-commerce sites, interactive applications, and experimenting with
+            modern web technologies. I’m especially interested in creating
+            clean, efficient, and visually appealing designs that offer a
+            seamless user experience.
+          </p>
+        </div>
+        <div className="mt-10">
           <h3 className="mb-4 text-2xl font-semibold text-teal-500">
             Technologies I Use:
           </h3>

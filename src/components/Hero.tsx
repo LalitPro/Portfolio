@@ -1,12 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Hero: React.FC = () => {
-  const heading = useRef();
-
   useGSAP(() => {
-    gsap.from(heading.current, {
+    gsap.from(".heading", {
       opacity: 0,
       y: 100,
       duration: 1,
@@ -14,13 +12,14 @@ const Hero: React.FC = () => {
     });
     gsap.from(".link", {
       opacity: 0,
+      scale: 2,
       duration: 1,
       stagger: 0.45,
     });
     gsap.from(".main-name", {
       opacity: 0,
       duration: 1,
-      y: -100,
+      y: 100,
       scale: 0.5,
       delay: 0.5,
     });
@@ -37,12 +36,9 @@ const Hero: React.FC = () => {
   });
 
   return (
-    <header className="py-20 text-center text-white bg-gradient-to-r from-blue-500 to-teal-400">
+    <header className="max-w-full py-20 text-center text-white bg-gradient-to-r from-blue-500 to-teal-400">
       <nav className="flex items-center justify-between px-6 mx-auto max-w-7xl">
-        <div
-          ref={heading}
-          className="hidden text-2xl font-bold fade-in sm:inline-block"
-        >
+        <div className="hidden text-2xl font-bold heading fade-in sm:inline-block">
           Lalit's Portfolio
         </div>
         <div className="inline-block text-2xl font-bold md:hidden"></div>

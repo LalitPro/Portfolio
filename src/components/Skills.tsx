@@ -1,6 +1,14 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import React from "react";
 
 const Skills: React.FC = () => {
+  useGSAP(() => {
+    gsap.from(".skill-card", {
+      scale: 0,
+      stagger: 0.5,
+    });
+  });
   return (
     <section id="skills" className="px-6 py-20 mx-auto text-center max-w-7xl">
       <h2 className="mb-12 text-3xl font-bold">My Skills</h2>
