@@ -5,6 +5,10 @@
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Add to index.css or a custom styles file */

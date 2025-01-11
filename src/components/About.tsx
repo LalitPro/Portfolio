@@ -24,6 +24,7 @@ const AboutMe: React.FC = () => {
             seamless user experience.
           </p>
         </div>
+
         <div className="mt-10">
           <h3 className="mb-4 text-2xl font-semibold text-teal-500">
             Technologies I Use:

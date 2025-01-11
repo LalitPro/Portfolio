@@ -1,8 +1,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React from "react";
+import { FC } from "react";
 
-const Skills: React.FC = () => {
+const Skills: FC = () => {
   useGSAP(() => {
     gsap.from(".skill-card", {
       scale: 0,

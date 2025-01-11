@@ -70,6 +70,23 @@ const Projects: React.FC = () => {
             </a>
           </div>
           {/* Project 4 ends */}
+          {/* Project 5 */}
+          <div className="p-6 transition bg-white rounded-lg shadow-lg hover:shadow-xl">
+            <img src="./images/note.webp" className="h-48 mx-auto" />
+            <h3 className="text-xl font-semibold">NotiPad</h3>
+            <p className="mt-2 text-gray-600">
+              A Note Taking app with firebase integration. Which saves your
+              notes and you can access them from anywhere by logiiing in.
+            </p>
+            <a
+              href="https://oxdigital.netlify.app"
+              target="_blank"
+              className="inline-block mt-4 text-blue-500 hover:underline"
+            >
+              View Project
+            </a>
+          </div>
+          {/* Project 5 ends */}
         </div>
       </div>
     </section>
